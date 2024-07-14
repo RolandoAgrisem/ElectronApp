@@ -1,0 +1,23 @@
+{
+  "name": "electronapp",
+  "version": "1.0.0",
+  "description": "Proyecto basico de como usar ElectronJs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RolandoAgrisem/ElectronApp.git"
+  },
+  "author": "Rolando Guzman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RolandoAgrisem/ElectronApp/issues"
+  },
+  "homepage": "https://github.com/RolandoAgrisem/ElectronApp#readme",
+  "devDependencies": {
+    "electron": "^31.2.0"
+  }
+}
