@@ -10,7 +10,8 @@ const createWindow = () => {
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true,
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      contextIsolation: false,//cuando es false, se puede accesar a variables y/o funciones definidad en preload.js
     }
   })
 
@@ -18,6 +19,9 @@ const createWindow = () => {
   // Permitir maximizar y minimizar la ventana
   win.setMaximizable(true);
   win.setMinimizable(true);
+
+  //Abrir automaticamente la ventana de herramientas de desarrollo "DevTools"
+  win.webContents.openDevTools()
 }
 
 //Cuando la app esta lista, se ejecuta lo que esta dentro de esta funcion.
